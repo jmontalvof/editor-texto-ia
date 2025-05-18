@@ -20,4 +20,14 @@ Cuenta con autenticación, control por roles y funcionalidad colaborativa median
 
 ## 🧱 Estructura del proyecto
 
-
+editor-texto-ia/
+├── app_streamlit.py # Interfaz web por rol
+├── main.py # API FastAPI
+├── auth.py # Login y control de roles
+├── db.py # Modelos SQLAlchemy + conexión
+├── historial.py # Manejo de versiones
+├── llama3_local.py # Conexión a Ollama
+├── requirements.txt # Dependencias Python
+├── Dockerfile # Imagen Docker de la app
+├── docker-compose.yml # Orquestador de contenedores
+└── .dockerignore
