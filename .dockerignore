@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+usuarios.db
+historial.json
+*.log
+.venv/
+

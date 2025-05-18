@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  editor-ia:
+    build: .
+    container_name: editor-ia-app
+    ports:
+      - "8000:8000"   # FastAPI
+      - "8501:8501"   # Streamlit
+    volumes:
+      - .:/app
+    environment:
+      - OLLAMA_URL=http://host.docker.internal:11434
+    restart: always
+
